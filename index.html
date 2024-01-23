@@ -1,60 +1,235 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
-<script src="https://cdn.tailwindcss.com"></script>
-<!-- google font -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
-<!-- font icon -->
-<script src="https://kit.fontawesome.com/d7b7563d24.js" crossorigin="anonymous"></script>
-<style>
-    .font-Manrope {
-        font-family: "Manrope", sans-serif;
-    }
-</style>
-
-</head>
-<header class="font-Manrope md:container md:mx-auto my-10">
-    <nav>
-        <div class="navbar flex justify-between">
-            <div class="">
-              <div class="dropdown">
-                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link
+            href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css"
+            rel="stylesheet"
+            type="text/css"
+        />
+        <script src="https://cdn.tailwindcss.com"></script>
+        <!-- google font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+            rel="stylesheet"
+        />
+        <!-- font icon -->
+        <script
+            src="https://kit.fontawesome.com/d7b7563d24.js"
+            crossorigin="anonymous"
+        ></script>
+        <style>
+            .font-Manrope {
+                font-family: "Manrope", sans-serif;
+            }
+        </style>
+    </head>
+    <header class="font-Manrope md:container md:mx-auto my-10">
+        <nav>
+            <div class="navbar flex justify-between">
+                <div class="">
+                    <div class="dropdown">
+                        <div
+                            tabindex="0"
+                            role="button"
+                            class="btn btn-ghost lg:hidden"
+                        >
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="h-5 w-5"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16"
+                                />
+                            </svg>
+                        </div>
+                        <ul
+                            tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 text-base shadow bg-base-100 rounded-box w-52"
+                        >
+                            <li><a>Home</a></li>
+                            <li><a>About</a></li>
+                            <li><a>Pages</a></li>
+                            <li><a>Blog</a></li>
+                            <li><a>Contact</a></li>
+                        </ul>
+                    </div>
+                    <h1 class="text-3xl lg:text-5xl font-bold">
+                        Hockey<span class="text-red-600">'</span>s
+                    </h1>
                 </div>
-                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 text-base shadow bg-base-100 rounded-box w-52">
-                  <li><a>Home</a></li>
-                  <li><a>About</a></li>
-                  <li><a>Pages</a></li>
-                  <li><a>Blog</a></li>
-                  <li><a>Contact</a></li>
-                </ul>
-              </div>
-              <h1 class="text-3xl lg:text-5xl font-bold">Hockey<span class="text-red-600">'</span>s</h1>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 font-bold">
+                        <li><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Pages</a></li>
+                        <li><a>Blog</a></li>
+                        <li><a>Contact</a></li>
+                    </ul>
+                </div>
+                <div class="">
+                    <i
+                        class="fa-solid fa-magnifying-glass lg:px-5 invisible  lg:visible"
+                    ></i>
+                    <a class="btn btn-error text-white font-bold">Get Ticket</a>
+                </div>
             </div>
-            <div class="navbar-center hidden lg:flex">
-              <ul class="menu menu-horizontal px-1 font-bold">
-                <li><a>Home</a></li>
-                  <li><a>About</a></li>
-                  <li><a>Pages</a></li>
-                  <li><a>Blog</a></li>
-                  <li><a>Contact</a></li>
-              </ul>
+        </nav>
+        <!-- banner section -->
+        <div class="carousel w-full h-[70vh] mt-10">
+            <div id="slide1" class="carousel-item relative w-full">
+                <img
+                    src="Images/1.png"
+                    class="w-full"
+                />
+                <div class="  lg:absolute bg-black right-0 bottom-0 mb-10 mr-10 p-10 rounded-2xl space-y-3">
+                    <h2 class="text-2xl font-bold text-white ">Meet all the heroes from the field</h2>
+                    <p class="text-white">
+                        Dit amet consectetur. Condimentum dignissim adipiscing aliquam <br> turpis  placerat dolor. Purus urna in sit nullam proin. 
+                    </p>
+                </div>
+                <div
+                    class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+                >
+                    <a href="#slide4" class="btn btn-circle">❮</a>
+                    <a href="#slide2" class="btn btn-circle">❯</a>
+                </div>
             </div>
-            <div class="">
-                <i class="fa-solid fa-magnifying-glass px-5 invisible lg:visible"></i>
-              <a class="btn btn-error text-white font-bold">Get Ticket</a>
+            <div id="slide2" class="carousel-item relative w-full">
+                <img
+                    src="https://daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.jpg"
+                    class="w-full"
+                />
+                <div
+                    class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+                >
+                    <a href="#slide1" class="btn btn-circle">❮</a>
+                    <a href="#slide3" class="btn btn-circle">❯</a>
+                </div>
             </div>
-          </div>
-    </nav>
-</header>
-<body>
+            <div id="slide3" class="carousel-item relative w-full">
+                <img
+                    src="https://daisyui.com/images/stock/photo-1414694762283-acccc27bca85.jpg"
+                    class="w-full"
+                />
+                <div
+                    class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+                >
+                    <a href="#slide2" class="btn btn-circle">❮</a>
+                    <a href="#slide4" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+            <div id="slide4" class="carousel-item relative w-full">
+                <img
+                    src="https://daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.jpg"
+                    class="w-full"
+                />
+                <div
+                    class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+                >
+                    <a href="#slide3" class="btn btn-circle">❮</a>
+                    <a href="#slide1" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+        </div>
+        <div></div>
+    </header>
+    <!-- header end -->
+    <body class="font-Manrope md:container md:mx-auto">
+        <section class="my-24">
+            <div class="text-center border-dashed border-t-2 border-b-2 p-10">
+                <h1 class=" text-4xl lg:text-5xl font-extrabold">Professional Hockeys Club</h1>
+                <p class="my-10">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin.</p>
+            </div>
+             <div class="  lg:flex flex-row justify-between items-center pt-16 border-dashed border-b-2 pb-20">
+                <div class="text-center space-y-3 p-5">
+                    <div class="radial-progress text-[#FF4240]" style="--value:87;" role="progressbar"><span class="text-black text-xl font-bold">87%</span></div>
+                    <h2 class="text-xl font-bold">Prayer Facility</h2>
+                    <p>Amet consectetur. Condimentum  dignissim adipiscing .</p>
+                 </div>
+                <div class="text-center space-y-3 p-5">
+                    <div class="radial-progress text-[#49D293]" style="--value:95;" role="progressbar"><span class="text-black text-xl font-bold">95%</span></div>
+                    <h2 class="text-xl font-bold ">Experienced Coach</h2>
+                    <p>Amet consectetur. Condimentum  dignissim adipiscing .</p>
+                 </div>
+                <div class="text-center space-y-3 p-5">
+                    <div class="radial-progress text-[#FFB546]" style="--value:90;" role="progressbar"><span class="text-black text-xl font-bold">90%</span></div>
+                    <h2 class="text-xl font-bold ">Senior Player</h2>
+                    <p>Amet consectetur. Condimentum  dignissim adipiscing .</p>
+                 </div>
+                <div class="text-center space-y-3 p-5">
+                    <div class="radial-progress text-[#4C8DF1]" style="--value:80;" role="progressbar"><span class="text-black text-xl font-bold">80%</span></div>
+                    <h2 class="text-xl font-bold ">Training Ground</h2>
+                    <p>Amet consectetur. Condimentum  dignissim adipiscing .</p>
+                 </div>
+                    
+             </div>
+        </section>
+        <!-- program section -->
+        <section>
+            <div>
+                <div>
+                    <div class="text-center border-dashed  border-b-2 p-10">
+                        <h1 class=" text-4xl lg:text-5xl font-extrabold">Program Sections</h1>
+                        <p class="my-10">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin.</p>
+                    </div>
+
+                </div>
+                <div>
+                    <div class="lg:flex  flex-row justify-center items-center mt-20 gap-6 ">
+                        <div class="card flex-1 lg:w-96  shadow-xl image-full">
+                            <figure><img class=" w-full" src="Images/2.png" alt="Shoes" /></figure>
+                            <div class="card-body lg:mt-20">
+                              <h2 class="card-title text-4xl font-bold text-white py-5">Junior Program</h2>
+                              <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit <br> 
+                                enim sagittis turpis in magna. Id et sed euismod natoque <br> amet nunc morbi nulla. Tortor congue sed et in.</p>
+                              <div class="card-actions justify-start">
+                                <button class="btn bg-[#FF4240] text-white font-semibold border-0">Register Now!</button>
+                              </div>
+                            </div>
+                          </div>
+                        <div class="card flex-1 lg:w-96  shadow-xl image-full">
+                            <figure><img class=" w-full" src="Images/3.png" alt="Shoes" /></figure>
+                            <div class="card-body lg:mt-20">
+                              <h2 class="card-title text-4xl font-bold text-white py-5">Teenager Program</h2>
+                              <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit <br> 
+                                enim sagittis turpis in magna. Id et sed euismod natoque <br> amet nunc morbi nulla. Tortor congue sed et in.</p>
+                              <div class="card-actions justify-start">
+                                <button class="btn bg-[#FF4240] text-white font-semibold border-0">Register Now!</button>
+                              </div>
+                            </div>
+                          </div>
     
-</body>
+                    </div>
+                    <div class="card flex-1 w-full  shadow-xl image-full mt-6">
+                        <figure><img class=" w-full" src="Images/4.png" alt="Shoes" /></figure>
+                        <div class="card-body lg:mt-28 p-10">
+                          <h2 class="card-title text-4xl font-bold text-white py-5">Professional Program</h2>
+                          <p class="">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit <br> 
+                            enim sagittis turpis in magna. Id et sed euismod natoque <br> amet nunc morbi nulla. Tortor congue sed et in.</p>
+                          <div class="card-actions justify-start">
+                            <button class="btn bg-[#FF4240] text-white font-semibold border-0">Register Now!</button>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+
+            </div>
+        </section>
+        <section>
+            
+        </section>
+
+    </body>
 </html>
